@@ -1,4 +1,5 @@
 function binarySearch(array, searchTerm) {
+	
 	/*
 	 ** Check the middle element, if it's higher than the searchTerm
 	 ** then check the element in between the start and the middle, otherwise
