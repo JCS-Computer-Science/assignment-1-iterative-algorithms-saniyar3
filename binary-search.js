@@ -9,16 +9,33 @@ function binarySearch(array, searchTerm) {
 	 ** keep repeating with smaller and smaller subsets until you find the searchTerm
 	 */
 
+	 while (i != searchTerm) {
 	function findmiddle(array) {
-		var middle= arr[math.floor((arr.length - 1) /2)];
-		
-		for (var isMiddleHigher= findindexof(middle); i <arr.length; i++){
-			if (isMiddleHigher > arr) {
-				largest= isMiddleHigher
+			var middle= arr[math.floor((arr.length - 1) /2)];
+			
+			for (var isMiddleHigher= findindexof(middle); i <arr.length; i++){
+				if (isMiddleHigher > arr) {
+					largest= isMiddleHigher
+				}
 			}
-		}
-		console.log(largest)
+			console.log(largest)
+	  }
+
+	if (findmiddle(array)=searchterm){
+		return findmiddle
 	}
+	  
+
+	//function findmiddle2(array) {
+		//var middle2= arr[math.floor((arr.length - 1) /2)];
+			
+		//for (var isMiddleHigher2= findindexof(middle2); i <arr.length; i++){
+			//if (isMiddleHigher2 > arr) {
+				//largest2= isMiddleHigher2
+		//	}
+		//}
+			//console.log(largest2)
+	//}
 
 	return null;
 }
