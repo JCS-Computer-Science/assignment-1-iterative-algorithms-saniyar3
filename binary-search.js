@@ -11,6 +11,7 @@ function binarySearch(array, searchTerm) {
 
 	 while (i != searchTerm) {
 	function findmiddle(array) {
+		//finds middle of the array using the length and dividing by 2
 			var middle= arr[math.floor((arr.length - 1) /2)];
 			
 			for (var isMiddleHigher= findindexof(middle); i <arr.length; i++){
