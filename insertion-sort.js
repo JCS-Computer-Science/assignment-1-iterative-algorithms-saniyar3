@@ -1,5 +1,4 @@
 function insertionSort(array) {
-	<script>
 	for (let i = 1; i < nums.length; i++) {
 		let a = i - 1
 		let hi = nums[i]

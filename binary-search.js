@@ -24,6 +24,7 @@ function binarySearch(array, searchTerm) {
 
 	if (findmiddle(array)=searchterm){
 		return findmiddle
+		console.log(findmiddle)
 	}
 	  
 
