@@ -12,34 +12,19 @@ function binarySearch(array, searchTerm) {
 	 while (i != searchTerm) {
 	function findmiddle(array) {
 		//finds middle of the array using the length and dividing by 2
-			var middle= arr[math.floor((arr.length - 1) /2)];
+			let middle= array[math.floor((array.length - 1) /2)];
 			
-			for (var isMiddleHigher= findindexof(middle); i <arr.length; i++){
-				if (isMiddleHigher > arr) {
-					largest= isMiddleHigher
+				if (middle = searchTerm) {
+					return middle
+				}
+				if (middle <searchTerm){
+					this= middle +1
 				}
 			}
-			console.log(largest)
+				if (middle >searchTerm){
+					that=middle+1
+				}
+			
 	  }
 
-	if (findmiddle(array)=searchterm){
-		return findmiddle
-		console.log(findmiddle)
-	}
-	  
-
-	//function findmiddle2(array) {
-		//var middle2= arr[math.floor((arr.length - 1) /2)];
-			
-		//for (var isMiddleHigher2= findindexof(middle2); i <arr.length; i++){
-			//if (isMiddleHigher2 > arr) {
-				//largest2= isMiddleHigher2
-		//	}
-		//}
-			//console.log(largest2)
-	//}
-
-	return null;
-}
-
-module.exports = binarySearch;
+module.exports = binarySearch;}
