@@ -1,15 +1,20 @@
 function bubbleSort(array) {
-    let swap=0
-    while(swap!==-0)
-    for(i<array.length; i++;){
-        let firstElement= array[i]
-        let secondElement= array[i+1]
-        if(firstElement>secondElement)
-            firstElement=secondElement
+    let swap= true;
+    for (let i= 0; i<array.length-1 && swap; i++){
+        swap=false;
+        for(let index = 0; index<array.length -i -1; index++){
+            if (array[index]>array[index+1]){
+                let Switch= array[index];
+                array[index]=array[index+1];
+                array[index+1]=Switch;
+                swap=true
+            }
+        }
     }
     return array;
 }
-    //end
+module.exports = bubbleSort;
+
     /* use for loop
     ** Compare the first two elements and swap if necessary.
     ** Then compare the second and third elements and swap if
@@ -19,11 +24,3 @@ function bubbleSort(array) {
     ** Repeat the above process until you get through an entire
     ** cycle without needing any swaps
     */
-
-	//return array;
-    //return sortone;
-    //return sorttwo;
-
-
-bubblesort(arr);
-module.exports = bubbleSort;

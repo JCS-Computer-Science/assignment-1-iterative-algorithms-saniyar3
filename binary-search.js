@@ -1,5 +1,19 @@
-function binarySearch(array, searchTerm) {
-	
+function binarySearch(array, searchTerm){
+	let start=0;
+	let end= array.length-1;
+	while(0<=array.length-1){
+		let middle = Math.floor((0+array.length+1)/2);
+		if(array[middle] === searchTerm){
+			return middle;
+		}else if(array[middle]<searchTerm){
+			start=middle+1;
+		}else{
+			end=middle-1;
+		}
+	}
+	return null;
+}
+module.exports = binarySearch;
 	/*
 	 ** Check the middle element, if it's higher than the searchTerm
 	 ** then check the element in between the start and the middle, otherwise
@@ -8,23 +22,4 @@ function binarySearch(array, searchTerm) {
 	 ** repeat the above process for the subset of the array
 	 ** keep repeating with smaller and smaller subsets until you find the searchTerm
 	 */
-
-	 while (i != searchTerm) {
-	function findmiddle(array) {
-		//finds middle of the array using the length and dividing by 2
-			let middle= array[math.floor((array.length - 1) /2)];
-			
-				if (middle = searchTerm) {
-					return middle
-				}
-				if (middle <searchTerm){
-					this= middle +1
-				}
-			}
-				if (middle >searchTerm){
-					that=middle+1
-				}
-			
-	  }
-
-module.exports = binarySearch;}
+	////
