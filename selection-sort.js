@@ -1,5 +1,5 @@
 function selectionSort(array) {
-	for (let i=0; array.length - 1; i++){
+	for (let i=0; i<array.length - 1; i++){
 		let minI=i;
 		for(let index= i+1; index <array.length; index++){
 			if(array[index]<array[minI]){
@@ -7,7 +7,7 @@ function selectionSort(array) {
 			}
 		}
 		if (minI !== i){
-			[array[i]], array[minI]=[array[minI], array[i]];
+			[array[i], array[minI]]=[array[minI], array[i]];
 		}
 	}
 	return array;

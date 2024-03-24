@@ -1,8 +1,9 @@
 function binarySearch(array, searchTerm){
 	let start=0;
 	let end= array.length-1;
-	while(0<=array.length-1){
-		let middle = Math.floor((0+array.length+1)/2);
+	while(start<=end){
+		let middle = Math.floor((start+end)/2);
+		console.log(middle)
 		if(array[middle] === searchTerm){
 			return middle;
 		}else if(array[middle]<searchTerm){
